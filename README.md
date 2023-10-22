@@ -50,3 +50,12 @@ CREATE TABLE `user_tbl` (
   `user_role_id` int(11) DEFAULT NULL
 )
 ```
+5. Routing C:\xampp\htdocs\login_ci\app\Config\Routes
+```php
+<?php
+
+use CodeIgniter\Router\RouteCollection;
+
+$routes->get('testing', 'Home::index');
+$routes->get('homies', 'Home::index');
+```
