@@ -56,7 +56,57 @@ CREATE TABLE `user_tbl` (
 
 use CodeIgniter\Router\RouteCollection;
 
-$routes->get('testing', 'Home::index');
-$routes->get('homies', 'Home::index');
+/**
+ * @var RouteCollection $routes
+ */
+$routes->get('LoginForm', 'LoginController::Login');
 ```
-6. Model 
+6. Model C:\xampp\htdocs\login_ci\app\Models\LoginModel
+```php
+<?php
+
+namespace App\Models;
+
+use CodeIgniter\Model;
+
+class LoginModel extends Model
+{
+    protected $table = 'user_role_tbl';
+    public function checkUserRole ($slug = false){
+        // if ($slug == false ){
+            return $this->findAll();
+        // }
+        // return $this->where(['user_type' => 'Patient'])->first();
+    }
+}
+```
+7. View C:\xampp\htdocs\login_ci\app\Views\LoginView
+```php
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<body>
+    <p><?php var_dump($role) ?></p>
+    <h1>Hello</h1>
+</body>
+</html>
+```
+8. Controller C:\xampp\htdocs\login_ci\app\Controllers\LoginController
+```php
+<?php
+
+namespace App\Controllers;
+
+use App\Models\LoginModel;
+
+class LoginController extends BaseController
+{
+    public function Login()
+    {
+        $model = model(LoginModel::class);
+        $data['role'] = $model->checkUserRole();
+        // $data['role'] = 'Patient';
+        return view('LoginView', $data);
+    }
+}
+```
