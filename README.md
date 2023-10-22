@@ -82,18 +82,7 @@ class LoginModel extends Model
     }
 }
 ```
-7. View C:\xampp\htdocs\login_ci\app\Views\LoginView
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<body>
-    <p><?php var_dump($role) ?></p>
-    <h1>Hello</h1>
-</body>
-</html>
-```
-8. Controller C:\xampp\htdocs\login_ci\app\Controllers\LoginController
+7. Controller C:\xampp\htdocs\login_ci\app\Controllers\LoginController
 ```php
 <?php
 
@@ -111,4 +100,15 @@ class LoginController extends BaseController
         return view('LoginView', $data);
     }
 }
+```
+8. View C:\xampp\htdocs\login_ci\app\Views\LoginView
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<body>
+    <p><?php var_dump($role) ?></p>
+    <h1>Hello</h1>
+</body>
+</html>
 ```
