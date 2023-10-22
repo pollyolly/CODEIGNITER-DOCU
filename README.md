@@ -57,8 +57,10 @@ CREATE TABLE `user_tbl` (
 use CodeIgniter\Router\RouteCollection;
 
 /**
- * @var RouteCollection $routes
- */
+LoginForm = URL (http://localhost/login_ci/public/LoginForm)
+LoginController = controller (C:\xampp\htdocs\login_ci\app\Controllers\LoginController)
+Login = public function Login()
+**/
 $routes->get('LoginForm', 'LoginController::Login');
 ```
 6. Model C:\xampp\htdocs\login_ci\app\Models\LoginModel
@@ -81,7 +83,7 @@ class LoginModel extends Model
 }
 ```
 7. View C:\xampp\htdocs\login_ci\app\Views\LoginView
-```php
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
