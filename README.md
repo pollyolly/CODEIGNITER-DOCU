@@ -59,3 +59,4 @@ use CodeIgniter\Router\RouteCollection;
 $routes->get('testing', 'Home::index');
 $routes->get('homies', 'Home::index');
 ```
+6. Model 
