@@ -61,7 +61,7 @@ public string $baseURL = "http://localhost/login_ci/";
 use CodeIgniter\Router\RouteCollection;
 
 /**
-LoginForm = URL (http://localhost/login_ci/public/LoginForm)
+LoginForm = URL name (http://localhost/login_ci/public/LoginForm) 
 LoginController = controller (C:\xampp\htdocs\login_ci\app\Controllers\LoginController)
 Login = public function Login()
 **/
