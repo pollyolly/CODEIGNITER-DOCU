@@ -126,3 +126,10 @@ login_ci->assets->css
 ```
 <link href="<?php base_url('assets/images/background.png') ?>" type="text/css" rel="stylesheet" />
 ```
+11. Base url config
+```
+login_ci->app
+login_ci->config->App
+
+public string $baseURL = 'http://localhost/login_ci/';
+```
