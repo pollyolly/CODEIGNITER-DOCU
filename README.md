@@ -1,4 +1,4 @@
-# CodeIgniter-Docu
+# CodeIgniter-4-Docu
 ```
 Code igniter 
 1. copy code igniter - htdocs
@@ -50,7 +50,11 @@ CREATE TABLE `user_tbl` (
   `user_role_id` int(11) DEFAULT NULL
 )
 ```
-5. Routing C:\xampp\htdocs\login_ci\app\Config\Routes
+5. login_ci/app->Config->App.php
+```
+public string $baseURL = "http://localhost/login_ci/";
+```
+6. Routing C:\xampp\htdocs\login_ci\app\Config\Routes
 ```php
 <?php
 
@@ -63,7 +67,7 @@ Login = public function Login()
 **/
 $routes->get('LoginForm', 'LoginController::Login');
 ```
-6. Model C:\xampp\htdocs\login_ci\app\Models\LoginModel
+7. Model C:\xampp\htdocs\login_ci\app\Models\LoginModel
 ```php
 <?php
 
@@ -82,7 +86,7 @@ class LoginModel extends Model
     }
 }
 ```
-7. Controller C:\xampp\htdocs\login_ci\app\Controllers\LoginController
+8. Controller C:\xampp\htdocs\login_ci\app\Controllers\LoginController
 ```php
 <?php
 
@@ -101,7 +105,7 @@ class LoginController extends BaseController
     }
 }
 ```
-8. View C:\xampp\htdocs\login_ci\app\Views\LoginView
+9. View C:\xampp\htdocs\login_ci\app\Views\LoginView
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -111,4 +115,14 @@ class LoginController extends BaseController
     <h1>Hello</h1>
 </body>
 </html>
+```
+10. Resources
+```
+login_ci->app
+login_ci->assets->css
+	  assets->js
+	  assets->images
+```
+```
+<link href="<?php base_url('assets/images/background.png') ?>" type="text/css" rel="stylesheet" />
 ```
