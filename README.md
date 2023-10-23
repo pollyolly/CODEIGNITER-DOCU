@@ -117,20 +117,21 @@ class LoginController extends BaseController
 </html>
 ```
 10. Base url config
-```
+```vim
 login_ci->app
 login_ci->config->App
 ```
-```
+```php
 public string $baseURL = 'http://localhost/login_ci/';
 ```
 11. Resources
-```
+```vim
 login_ci->app
 login_ci->assets->css
 	  assets->js
 	  assets->images
 ```
-```
+```html
 <link href="<?php base_url('assets/images/background.png') ?>" type="text/css" rel="stylesheet" />
+<a href="<?php site_url('Controller/Function') ?>">Click Me</a>
 ```
