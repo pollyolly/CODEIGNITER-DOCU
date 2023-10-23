@@ -133,4 +133,5 @@ login_ci->assets->css
 ```
 ```
 <link href="<?php base_url('assets/images/background.png') ?>" type="text/css" rel="stylesheet" />
+<a href="<?php site_url('Controller/Function') ?>">Click Me</a>
 ```
