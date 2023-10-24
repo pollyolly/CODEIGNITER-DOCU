@@ -3,11 +3,15 @@
 Code igniter 
 1. copy code igniter - htdocs
 	https://github.com/CodeIgniter4/framework/releases/tag/v4.4.2
+- change the base URL -> app -> config -> App
+	public string $baseURL = 'http://localhost/ProjectCAP_ci4';
 2. access http://localhost/login_ci/public/
 3. install or enable libraries (xampp config--php.ini)
 	intl
 	mbstring
 	json
+- check Running Development Server, Open Command Promt -> "C:\xampp\htdocs\ProjectCAP_ci4" -> "php spark serve"
+	
 4.Edit Database C:\xampp\htdocs\login_ci\app\Config\Database.php
 ```
 ```php
